@@ -1,0 +1,17 @@
+# Kratos Output Directories
+gid_output/
+vtk_output/
+
+# Python scripts output
+*.log
+simulation_diag.log
+simulation_diag.log
+_cl_check.log
+
+# Temporary and python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# GIF frames (if any)
+frames/
