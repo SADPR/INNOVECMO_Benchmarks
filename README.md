@@ -48,6 +48,25 @@ The project follows a hierarchical, multi-stage strategy to ensure numerical rob
 | **Kratos Multiphysics** | **Core Development**: Main environment for structural FOM, ROM training, and 1-D fluid coupling. |
 | **MATLAB** | **Joaquín's Environment**: Used for rapid prototyping, material property testing, and analytical verification. |
 
+## Getting Started
+
+This benchmark is designed to be portable and easy to run. You can install the structural solver directly via PyPI.
+
+### 1. Installation
+Install the core Kratos Multiphysics environment:
+```bash
+pip install KratosMultiphysics
+```
+For more details, visit the [Kratos PyPI page](https://pypi.org/project/KratosMultiphysics/).
+
+### 2. Running the Benchmark
+Navigate to the Phase I directory and run the main simulation script:
+```bash
+cd Benchmarks/Stage1_Structural/
+python3 MainKratos_FOM.py
+```
+This will generate the results in the `vtk_output` folder (if not ignored) or you can use the built-in visualization tools to inspect the deformation.
+
 ## Modeling Philosophy: Multifidelity Pipeline
 
 1.  **Reference Truth**: High-fidelity FEM simulations establish physical trust.
