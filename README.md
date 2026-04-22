@@ -17,10 +17,13 @@ The project follows a hierarchical, multi-stage strategy to ensure numerical rob
     - **Pre-stress Rationale**: An axial pre-strain of **$2\%$** is applied to emulate real-world clinical assembly. This ensures the compliant tube remains taut, preventing structural buckling during high-frequency actuation and shifting the system's resonant response to the target clinical range.
     - **Validation**: Compare against experimental segmented contours.
 
-![Final Displacement Animation](file:///home/kratos/INNOVECMO_Benchmarks/Benchmarks/Stage1_Structural/tube_displacement.gif)
+![Tube Solid Model](Figures/Solid_tubepng.png)
+*Initial Solid geometry and Model Parts for the compliant tube.*
+
+![Final Displacement Animation](Benchmarks/Stage1_Structural/tube_displacement.gif)
 *Animation of the two-stage structural response. Stage 1 (0-1s): Symmetric Axial stretching. Stage 2 (1-2s): Vertical pinching. Colormap represents displacement magnitude with dynamic scaling for maximum detail.*
 
-![Boundary Regions](file:///home/kratos/INNOVECMO_Benchmarks/Figures/Pinching_and_End_Boundaries.png)
+![Boundary Regions](Figures/Pinching_and_End_Boundaries.png)
 *Definition of End Boundaries and Pinching Zones (Top/Bottom).*
 2.  **Phase II: Projection-based Structural ROM**
     - Construct a reduced-order model (ROM) to compress the structural response manifold.
