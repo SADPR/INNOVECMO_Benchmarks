@@ -23,8 +23,11 @@ The project follows a hierarchical, multi-stage strategy to ensure numerical rob
 ![Boundary Regions](Figures/Pinching_and_End_Boundaries.png)
 *Definition of End Boundaries and Pinching Zones (Top/Bottom).*
 
-![Final Displacement Animation](Benchmarks/Stage1_Structural/tube_displacement.gif)
+![Final Displacement Animation 3D](Benchmarks/Stage1_Structural/tube_displacement.gif)
 *Animation of the two-stage structural response. Stage 1 (0-1s): Symmetric Axial stretching. Stage 2 (1-2s): Vertical pinching. Colormap represents displacement magnitude with dynamic scaling for maximum detail.*
+
+![Final Displacement Animation 2D](Benchmarks/Stage1_Structural/tube_2d_displacement.gif)
+*Premium Technical Section: Side-view animation with internal displacement gradients (plasma colormap) and high-contrast boundary definition for experimental validation.*
 2.  **Phase II: Projection-based Structural ROM**
     - Construct a reduced-order model (ROM) to compress the structural response manifold.
     - Accelerates the generation of training data for subsequent stages.
@@ -37,13 +40,13 @@ The project follows a hierarchical, multi-stage strategy to ensure numerical rob
 5.  **Phase V: Methodological Local FSI**
     - High-fidelity 3D FSI simulations used as a validation centerpiece for the reduced-order pipeline.
 
+
 ## Software Ecosystem
 
 | Tool | Primary Role |
 |------|--------------|
-| **Abaqus** | High-fidelity structural reference, contact benchmarking, and high-resolution automated batches. |
-| **Kratos Multiphysics** | Main development environment, structural ROM, 1D fluid solver, and co-simulation framework. |
-| **MATLAB** | Rapid prototyping, hyperelastic material testing, and preliminary data generation. |
+| **Kratos Multiphysics** | **Core Development**: Main environment for structural FOM, ROM training, and 1-D fluid coupling. |
+| **MATLAB** | **Joaquín's Environment**: Used for rapid prototyping, material property testing, and analytical verification. |
 
 ## Modeling Philosophy: Multifidelity Pipeline
 
